@@ -19,7 +19,7 @@ function City() {
     async function fetchImage() {
         const response = await fetch(` https://api.unsplash.com/search/photos?query=${cities}s&client_id=8I0zAPLYTXryJZpUPB1imQz0BeT1blruWMqgdhuUPIE`)
         const objects = await response.json()
-        setImageUrl(objects.results[5])
+        setImageUrl(objects.results[1])
         console.log(objects)
 
     }
